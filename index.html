@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Itexza</title>
+        <meta charset="UTF8">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/42f3d5f3cb.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <!---This is header info-->
+        <div class="header_info">
+            <div class="header_info_contact">
+
+                <div class="header_info_contact_phone_number">
+                    <ol>
+                        <li>
+                            <i class="fas fa-phone-volume"></i>
+                        </li>
+                        <li>
+                            <label>Preguntas? Contactanos: </label>
+                        </li>
+                        <li>
+                            <label class="contact_number">023150671</label>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="header_info_contact_whatsapp_contact">
+                    <ol>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                        </li>
+                        <li>
+                            <label>whatsapp: </label>
+                        </li>
+                        <li>
+                            <label class="contact_number">0998145374</label>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+
+            <div class="header_info_follow_us">
+                <div class="header_info_follow_us_label">
+                    <label>Síguenos:</label>
+                </div>
+                <div class="header_info_follow_us_socialmediaicon">
+                    <ol>
+                        <li>
+                            <i class="fab fa-facebook-square"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-instagram-square"></i>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!--This is just a line-->
+        <div class="line"></div>
+
+        <!--This is a header with menu, logo and search-->
+        <header class="header_container">
+            <div class="header_container_logo_container">
+                <img src="logo/logoItexza.jpeg" alt="logo_itexza">
+            </div>
+            <div class="header_container_menu">
+                <nav>
+                    <a href="telas.html">Telas</a>
+                    <a href="insumos.html">Insumos</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="contatanos.html">Contactanos</a>
+                </nav>
+            </div>
+
+            <div class="header_container_busqueda_localizacion">
+                <ol>
+                    <li>
+                        <i class="fas fa-search"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </li>
+                </ol>
+            </div>
+        </header>
+
+        <!---This is the slider-->
+        <div class="slideShowContainer">
+            <div class="mySlide fade">
+                <img src="imgSlides/slide1.jpg" alt="slide1" style="width: 100%">
+                <div class="textSlide">Precios Bajos, Siempre</div>
+            </div>
+
+            <div class="mySlide fade">
+                <img src="imgSlides/slide2.jpg" alt="slide2" style="width: 100%">
+                <div class="textSlide">Precios Bajos, Siempre</div>
+            </div>
+            
+            <div class="mySlide fade">
+                <img src="imgSlides/slide3.jpg" alt="slide3" style="width: 100%">
+                <div class="textSlide">Precios Bajos, Siempre</div>
+            </div>
+
+            <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlide(1)">&#10095;</a>
+
+            <!-- The dots/circles -->
+            <div class="dot_list">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html> 
+

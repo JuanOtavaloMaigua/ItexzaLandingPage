@@ -1,0 +1,216 @@
+/*Azul: RGB: 20 88 170*/
+/*Rojo: RGB: 245 0 6*/
+/*Plomo: RGB: 131 150 176*/
+:color{
+    --rojo: #ff0000;
+}
+
+.header_info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_info_contact{
+    display: flex;
+    padding-left: 20px;
+}
+
+.header_info_contact_phone_number{
+    padding-left: 15px;
+}
+
+.header_info_contact_phone_number ol{
+    list-style-type: none;
+    display: flex;
+}
+
+.header_info_contact_phone_number li{
+    padding-left: 7px;
+}
+
+.header_info_contact_whatsapp_contact{ 
+    padding-left: 15px;
+}
+
+.header_info_contact_whatsapp_contact ol{
+    display: flex;
+    list-style-type: none;
+}
+
+.header_info_contact_whatsapp_contact li{
+    padding-left: 5px;
+}
+
+.header_info_follow_us{
+    display: flex;
+    padding-right: 50px;
+    align-items: center;
+}
+
+.header_info_follow_us_socialmediaicon ol{
+    list-style-type: none;
+    display: flex;
+}
+
+.header_info_follow_us_socialmediaicon li{
+    padding-left: 5px;
+}
+
+.line{
+    border-bottom: 2px dotted; /*change color of dotted line*/
+}
+
+.header_container{
+    height: 90px;
+    background-color: white;
+}
+
+.header_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_container_logo_container{
+    display: flex;
+    width: 150px;
+    height: 120px;
+    align-items: center;
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+.header_container_logo_container img{
+    max-width: 100%;
+    max-height: 100%;
+     /* remove extra space below image */
+}
+
+.header_container_menu nav a{
+    padding-left: 20px;
+    text-decoration: none;
+    color:rgb(20, 80,170);
+    font-size: 20px;
+}
+
+.header_container_menu nav a:hover{
+    color: rgb(131, 150, 176);
+}
+
+.header_container_busqueda_localizacion{
+    padding-right: 50px;
+}
+
+.header_container_busqueda_localizacion ol{
+    list-style-type: none;
+    display: flex;
+}
+
+.header_container_busqueda_localizacion li{
+    padding-left: 10px;
+}
+
+
+.slideShowContainer{
+    height: 500px;
+    position: relative; /*Es relative para tomar como referecnai a los demas elementos*/
+}
+
+.mySlide img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.textSlide{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: rgb(245, 0, 6);
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot_list{
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(3, 3, 3);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot_list :hover{
+    height: 20px;
+    width: 20px;
+}
+
+
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+/*selector that uses frecuently*/
+.contact_number{
+    color: rgb(20, 80,170);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+label{
+    color: rgb(131, 150, 176)
+}
+body{
+    background-color: white;
+    margin: 0px;
+}
+
