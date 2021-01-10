@@ -112,7 +112,7 @@
 
 
 .slideShowContainer{
-    height: 500px;
+    height: 700px;
     position: relative; /*Es relative para tomar como referecnai a los demas elementos*/
 }
 
@@ -177,6 +177,49 @@
     height: 20px;
     width: 20px;
 }
+
+.products{
+    height: 500px;
+}
+
+.products_title{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.products_content{
+    padding-top: 30px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.products_content_item{
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.products_content_item img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.products_content_item img:hover{
+    
+    opacity: 0.6;
+}
+.products_content_item h3{
+    text-align: center;
+}
+
+
+
+
+
+
+
 
 
 
