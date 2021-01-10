@@ -179,6 +179,51 @@
 }
 
 
+.products{
+    padding-top: 10px;
+    height: 500px;
+}
+
+.titleProducts{
+    display: flex;
+    padding-left: 100px;
+}
+
+.contentProduct{
+    padding-top: 20px;
+    height: 300px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products_list{
+    height: 300px;
+    width: 300px;
+}
+
+.products_list img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.product_list_name{
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Fading animation */
 .fade {
