@@ -1,18 +1,28 @@
 /*Azul: RGB: 20 88 170*/
 /*Rojo: RGB: 245 0 6*/
 /*Plomo: RGB: 131 150 176*/
-:color{
-    --rojo: #ff0000;
+:root{
+    --color-rojo: rgb(245, 0, 6);
+    --color-azul: rgb(20, 88, 170);
+    --color-gris: rgb(131, 150, 176);
 }
 
 .header_info{
+    height: 60px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    background-color: var(--color-azul);
+    font-size: 18px;
 }
 
 .header_info_contact{
     display: flex;
-    padding-left: 20px;
+    padding-left: 50px;
+}
+
+.header_info_contact i{
+    font-size: 30px;
 }
 
 .header_info_contact_phone_number{
@@ -22,6 +32,8 @@
 .header_info_contact_phone_number ol{
     list-style-type: none;
     display: flex;
+    align-items: center;
+    letter-spacing: 1px;
 }
 
 .header_info_contact_phone_number li{
@@ -35,6 +47,8 @@
 .header_info_contact_whatsapp_contact ol{
     display: flex;
     list-style-type: none;
+    align-items: center;
+    letter-spacing: 1px;
 }
 
 .header_info_contact_whatsapp_contact li{
@@ -47,9 +61,22 @@
     align-items: center;
 }
 
+.header_info_follow_us_label{
+    letter-spacing: 1px;
+}
+
 .header_info_follow_us_socialmediaicon ol{
     list-style-type: none;
     display: flex;
+}
+
+.header_info_follow_us_socialmediaicon i{
+    font-size: 30px;
+}
+
+.header_info_follow_us_socialmediaicon i:hover{
+    color: var(--color-rojo);
+    cursor: pointer;
 }
 
 .header_info_follow_us_socialmediaicon li{
@@ -201,9 +228,13 @@
 
 /*selector that uses frecuently*/
 .contact_number{
-    color: rgb(20, 80,170);
+    color: var(--color-rojo);
     text-decoration: underline;
     cursor: pointer;
+}
+
+.contact_number:hover{
+    text-decoration: none;
 }
 
 label{
