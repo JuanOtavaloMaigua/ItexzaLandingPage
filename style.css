@@ -1,18 +1,28 @@
 /*Azul: RGB: 20 88 170*/
 /*Rojo: RGB: 245 0 6*/
 /*Plomo: RGB: 131 150 176*/
-:color{
-    --rojo: #ff0000;
+:root{
+    --color-rojo: rgb(245, 0, 6);
+    --color-azul: rgb(20, 88, 170);
+    --color-gris: rgb(131, 150, 176);
 }
 
 .header_info{
+    height: 60px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    background-color: var(--color-azul);
+    font-size: 18px;
 }
 
 .header_info_contact{
     display: flex;
-    padding-left: 20px;
+    padding-left: 50px;
+}
+
+.header_info_contact i{
+    font-size: 30px;
 }
 
 .header_info_contact_phone_number{
@@ -22,6 +32,8 @@
 .header_info_contact_phone_number ol{
     list-style-type: none;
     display: flex;
+    align-items: center;
+    letter-spacing: 1px;
 }
 
 .header_info_contact_phone_number li{
@@ -35,6 +47,8 @@
 .header_info_contact_whatsapp_contact ol{
     display: flex;
     list-style-type: none;
+    align-items: center;
+    letter-spacing: 1px;
 }
 
 .header_info_contact_whatsapp_contact li{
@@ -47,9 +61,22 @@
     align-items: center;
 }
 
+.header_info_follow_us_label{
+    letter-spacing: 1px;
+}
+
 .header_info_follow_us_socialmediaicon ol{
     list-style-type: none;
     display: flex;
+}
+
+.header_info_follow_us_socialmediaicon i{
+    font-size: 30px;
+}
+
+.header_info_follow_us_socialmediaicon i:hover{
+    color: var(--color-rojo);
+    cursor: pointer;
 }
 
 .header_info_follow_us_socialmediaicon li{
@@ -62,13 +89,11 @@
 
 .header_container{
     height: 90px;
-    background-color: white;
-}
-
-.header_container{
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    font-size: 30px;
 }
 
 .header_container_logo_container{
@@ -76,7 +101,6 @@
     width: 150px;
     height: 120px;
     align-items: center;
-    padding-left: 20px;
     justify-content: flex-start;
 }
 
@@ -90,26 +114,21 @@
     padding-left: 20px;
     text-decoration: none;
     color:rgb(20, 80,170);
-    font-size: 20px;
+    font-size: 25px;
+    letter-spacing: 1px;
 }
 
 .header_container_menu nav a:hover{
     color: rgb(131, 150, 176);
 }
 
-.header_container_busqueda_localizacion{
-    padding-right: 50px;
+.header_container_icons{
+    color: black;
 }
 
-.header_container_busqueda_localizacion ol{
-    list-style-type: none;
-    display: flex;
+.header_container_icons :hover{
+    color: var(--color-azul);
 }
-
-.header_container_busqueda_localizacion li{
-    padding-left: 10px;
-}
-
 
 .slideShowContainer{
     height: 500px;
@@ -187,6 +206,7 @@
     animation-name: fade;
     animation-duration: 1;
   }
+
   
   @-webkit-keyframes fade {
     from {opacity: .4}
@@ -201,9 +221,13 @@
 
 /*selector that uses frecuently*/
 .contact_number{
-    color: rgb(20, 80,170);
+    color: var(--color-rojo);
     text-decoration: underline;
     cursor: pointer;
+}
+
+.contact_number:hover{
+    text-decoration: none;
 }
 
 label{
