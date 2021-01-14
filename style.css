@@ -5,6 +5,7 @@
     --color-rojo: rgb(245, 0, 6);
     --color-azul: rgb(20, 88, 170);
     --color-gris: rgb(131, 150, 176);
+    --space-between-container : 2rem;
 }
 
 .header_info{
@@ -81,10 +82,6 @@
 
 .header_info_follow_us_socialmediaicon li{
     padding-left: 5px;
-}
-
-.line{
-    border-bottom: 2px dotted; /*change color of dotted line*/
 }
 
 .header_container{
@@ -236,6 +233,8 @@
     color: var(--color-plomo)
 }
 
+/*Message Company*/
+
 .message_company{
     height: 700px;
     width: 100%;
@@ -257,7 +256,7 @@
     width: 50%;
 }
 
-.message_company_messages img{
+.message_company_messages_item img{
     width: 100%;
     height: 100%;
 }
@@ -265,12 +264,13 @@
 
 .message_company_telas h2{
     position: absolute;
-    font-size: 60px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     letter-spacing: 10px;
-    left: 30%;
-    bottom: 35%;
-    margin-left: -30px;
+    font-size: 50px;
     color: var(--color-azul);
+    text-align: center;
 }
 
 .message_company_messages{
@@ -281,12 +281,10 @@
     position: absolute;
     height: 700px;
     width: 100%;
-        
-    /* animation-name: slideSomos;
-    animation-duration: 1;
+}
 
-    -moz-animation-name: slideSomos;
-    -moz-animation-duration: 1; */
+.message_company_messages_item{
+    position: relative;
 }
 
 .message_company_messages_item img{
@@ -295,32 +293,123 @@
 }
 
 .message_company_messages_item h2{
+    position : absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 10px;
+    font-size: 50px;
+    color: var(--color-rojo);
+    text-align:start;
+    text-align: center;
+}
+
+
+/*Nosotros ontainer*/
+.nosotros_container{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    padding-top: var(--space-between-container);
+}
+
+.nosotros_container img{
+    height: 100%;
+    width: 100%;
+}
+
+.nosotros_container_title{
     position: absolute;
-    left: 20%;
-    bottom: 35%;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 1px;
     font-size: 60px;
     color: var(--color-rojo);
 }
 
+.nosotros_container_description{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-30%,-10%);
+    font-size: 50px;
+    color: var(--color-azul);
 
-
-
-
-
-
-/* Animation codes
-@keyframes slideSomos{
-    from {opacity: .4;}
-    to {opacity: 1;}
+    text-align: center;
 }
 
-@-moz-keyframes slideSomos{
-    from {opacity: .4;}
-    to {opacity: 1;}
+/* Space between containers
+.space_container{
+    background-color: white;
+    width: 100%;
+    height: 20px;
 } */
 
+/*Footer*/
+.footer{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-azul);
+}
 
-/* Fading animation */
+
+.footer_contacts_list{
+    list-style-type: none;
+    font-size: 25px;
+}
+
+.footer_contacts_list_item, .footer_socialmedia_list_item{
+    margin-top: 15px;
+}
+
+.footer_socialmedia_list_item :hover{
+    color: var(--color-rojo);
+}
+
+.footer_contacts_list_item i{
+    padding-right: 20px;
+}
+
+
+.footer_contacts_title{
+    color: var(--color-rojo);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.footer_socialmedia_list{
+    list-style-type: none;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.footer_location{
+    align-items: center;
+    justify-content: center;
+}
+
+/* .footer_contacts_maps{
+    padding-right: 20px;
+} */
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1s;
@@ -357,5 +446,8 @@ label{
 body{
     background-color: white;
     margin: 0px;
+    display: grid;
+    grid-gap: 2rem;
+    /* grid-auto-rows: 30px; */
 }
 

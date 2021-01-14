@@ -7,12 +7,18 @@
         <script src="https://kit.fontawesome.com/42f3d5f3cb.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet"> 
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2XgwHwNQ6WKEy6vvTQEH_RcHOg2yuFoQ&callback=initMap&libraries=&v=weekly"
+        defer
+        ></script>
+  
     </head>
 
     <body>
 
         <!---This is header info-->
-        <div class="header_info">
+        <!--Header-->
+        <header class="header_info">
             <div class="header_info_contact">
 
                 <div class="header_info_contact_phone_number">
@@ -67,13 +73,12 @@
                     </ol>
                 </div>
             </div>
-        </div>
+        </header>
 
-        <!--This is just a line-->
-        <div class="line"></div>
+
 
         <!--This is a header with menu, logo and search-->
-        <header class="header_container">
+        <nav class="header_container">
             <div class="header_container_logo_container">
                 <img src="logo/logoItexza.jpeg" alt="logo_itexza">
             </div>
@@ -94,87 +99,164 @@
                     </a>
 
             </div>
-        </header>
+        </nav>
 
-        <!---This is the slider-->
-        <div class="slideShowContainer">
-            <div class="mySlide fade">
-                <img src="imgSlides/slide1.jpg" alt="slide1" style="width: 100%">
-                <div class="textSlide1">Calidad Y</div>
-                <div class="textSlide2">Variedad</div>
+        
+        <!--Main -->
+        <main>
+                <!---This is the slider-->
+            <div class="slideShowContainer">
+                <div class="mySlide fade">
+                    <img src="imgSlides/slide1.jpg" alt="slide1" style="width: 100%">
+                    <div class="textSlide1">Calidad Y</div>
+                    <div class="textSlide2">Variedad</div>
+                </div>
+
+                <div class="mySlide fade">
+                    <img src="imgSlides/slide2.jpg" alt="slide2" style="width: 100%">
+                    <div class="textSlide1">Calidad Y</div>
+                    <div class="textSlide2">Cantidad</div>
+                </div>
+                
+                <div class="mySlide fade">
+                    <img src="imgSlides/slide3.jpg" alt="slide3" style="width: 100%">
+                    <div class="textSlide1">Calidad Y</div>
+                    <div class="textSlide2">Campeo</div>
+                </div>
+
+                <!-- The dots/circles -->
+                <div class="dot_list">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
             </div>
 
-            <div class="mySlide fade">
-                <img src="imgSlides/slide2.jpg" alt="slide2" style="width: 100%">
-                <div class="textSlide1">Calidad Y</div>
-                <div class="textSlide2">Cantidad</div>
+
+            <!--Products div container-->
+            <div class="products">
+                <div class="products_title">
+                    <h2 class="titleProducts">Nuestros Productos</h2>
+                </div>
+
+                <div class="products_content">
+                    <div class="products_content_item">
+                        <img src="imgs/telaPeluche.jpg" alt="telaPeluche">
+                        <a href="telas.html">Telas Peluche</a>
+                    </div>
+
+                    <div class="products_content_item">
+                        <img src="imgs/telaTermica.jpg" alt="telaPeluche">
+                        <a href="telas.html">Telas Térmicas</a>
+                    </div>
+
+                    <div class="products_content_item">
+                        <img src="imgs/insumos.jpg" alt="telaPeluche">
+                        <a href="insumos.html">Insumos</a>
+                    </div>
+                </div>
             </div>
+
+            <!---Message Copmpany-->
+            <div class="message_company">
+                <div class="message_company_telas">
+                    <img src="imgs/somosTelas.jpg" alt="somos telas">
+                    <h2>SOMOS TELAS</h2>
+                </div>
+
+                <div class="message_company_messages"> 
+                    <div class="message_company_messages_item">
+                        <img src="imgs/somosCobijas.jpg" alt="somos cobijas">
+                        <h2>SOMOS COBIJAS</h2>
+                    </div>
+
+                    <div class="message_company_messages_item">
+                        <img src="imgs/somosPijamas.jpg" alt="somos cobijas">
+                        <h2>SOMOS PIJAMAS</h2>
+                    </div>
+
+                    <div class="message_company_messages_item">
+                        <img src="imgs/somosConfeccion.jpg" alt="somos cobijas">
+                        <h2>SOMOS CONFECCIÓN</h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Nosotros Container-->
+
+            <div class="nosotros_container">
+                <img src="imgs/nosotros.jpg" alt="nosotros imagen">
+                <h2 class="nosotros_container_title">NOSOTROS</h2>
+                <p class="nosotros_container_description">
+                    Somos importadores de materia prima para la confección de 
+                    productos para el hogar y prendas de vestir. Contamos
+                    con estandares de calidad en cada uno de nuestros productos.
+                </p>
+            </div>
+
+            <!-- Space between containers
+            <div class="space_container"></div> -->
+
+        </main>
+
+       
+        <!--footer de la pagina web-->
+        <footer class="footer">
+            <div class="footer_contacts">
+                <h2 class="footer_contacts_title"> Contactos</h2>
+
+                <ol class="footer_contacts_list">
+                    <li class="footer_contacts_list_item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <label>Luis Mejia y Edmundo Grijalva</label>
+                    </li>
+
+                    <li class="footer_contacts_list_item">
+                        <i class="fab fa-whatsapp"></i>
+                        <label>0998145374</label>
+                    </li>
+
+                    <li class="footer_contacts_list_item">
+                        <i class="fas fa-phone-volume"></i>
+                        <label>023150671</label>
+                    </li>
+
+                    <li class="footer_contacts_list_item">
+                        <i class="fas fa-envelope-square"></i>
+                        <label>lauraotavalo@gmail.com</label>
+                    </li>
+                </ol>
+
+            </div>
+
             
-            <div class="mySlide fade">
-                <img src="imgSlides/slide3.jpg" alt="slide3" style="width: 100%">
-                <div class="textSlide1">Calidad Y</div>
-                <div class="textSlide2">Campeo</div>
+            <div class="footer_social_media">
+                <h2 class="footer_contacts_title">Síguenos</h2>
+
+                <ol class="footer_socialmedia_list">
+                    <li class="footer_socialmedia_list_item">
+                        <a href="https://www.facebook.com/pages/category/Textile-Company/Itexza-100312588630323/">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+
+                    <li class="footer_socialmedia_list_item">
+                        <a href="https://www.facebook.com/pages/category/Textile-Company/Itexza-100312588630323/">
+                        <i class="fab fa-instagram-square"></i>
+                        </a>
+                    </li>
+                </ol>
             </div>
 
-            <!-- The dots/circles -->
-            <div class="dot_list">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-        </div>
 
-
-        <!--Products div container-->
-        <div class="products">
-            <div class="products_title">
-                <h2 class="titleProducts">Nuestros Productos</h2>
-            </div>
-
-            <div class="products_content">
-                <div class="products_content_item">
-                    <img src="imgs/telaPeluche.jpg" alt="telaPeluche">
-                    <a href="telas.html">Telas Peluche</a>
-                </div>
-
-                <div class="products_content_item">
-                    <img src="imgs/telaTermica.jpg" alt="telaPeluche">
-                    <a href="telas.html">Telas Térmicas</a>
-                </div>
-
-                <div class="products_content_item">
-                    <img src="imgs/insumos.jpg" alt="telaPeluche">
-                    <a href="insumos.html">Insumos</a>
+            <div class="footer_location">
+                <h2 class="footer_contacts_title">Ubícanos</h2>
+                <div class="footer_contacts_maps">
+                    <div id="map"></div>
                 </div>
             </div>
-        </div>
-
-        <!---Message Copmpany-->
-        <div class="message_company">
-            <div class="message_company_telas">
-                <img src="imgs/somosTelas.jpg" alt="somos telas">
-                <h2>SOMOS TELAS</h2>
-            </div>
-
-            <div class="message_company_messages"> 
-                <div class="message_company_messages_item">
-                    <img src="imgs/somosCobijas.jpg" alt="somos cobijas">
-                    <h2>SOMOS COBIJAS</h2>
-                </div>
-
-                <div class="message_company_messages_item">
-                    <img src="imgs/somosPijamas.jpg" alt="somos cobijas">
-                    <h2>SOMOS PIJAMAS</h2>
-                </div>
-
-                <div class="message_company_messages_item">
-                    <img src="imgs/somosConfeccion.jpg" alt="somos cobijas">
-                    <h2>SOMOS CONFECCIÓN</h2>
-                </div>
-            </div>
-
-        </div>
-
+        </footer>
 
         <script src="app.js"></script>
     </body>
